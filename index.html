@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - CSS Glassmorphism Card Hover Effects</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="content">
+    </div>
+    <div class="card">
+      <div class="content">
+        <div class="img"><img src="./1.png"></div>
+        <div class="cardContent">
+          <h3>WolfyBwox<br><span>Twitch Streamer</span></h3>
+        </div>
+      </div>
+      <ul class="sci">
+        <li style="--i:1">
+          <a href="https://www.twitch.tv/wolfybwox"><i class="fa fa-twitch" aria-hidden="true"></i></a>
+        </li>
+        <li style="--i:2">
+          <a href="https://wolfykunn.github.io/homework-playlist/"><i class="fa fa-spotify" aria-hidden="true"></i></a>
+        </li>
+        <li style="--i:3">
+          <a href="https://github.com/WolfyKunn"><i class="fa fa-github" aria-hidden="true"></i></a>
+        </li>
+        <li style="--i:4">
+          <a href="https://twitter.com/WolfyBwox"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </li>
+    </ul>
+    </div>
+  </div>
+</body>
+
+<script>
+    const randomColor = "#"+((1<<24)*Math.random()|0).toString(16); 
+
+document.documentElement.style.setProperty('--main-bg-color', randomColor);
+
+</script>
+  
+</body>
+</html>
